@@ -405,22 +405,18 @@ th {
 /* 
 12 Column Mobile First Gird System
 */
-.preamble, .supporting,
 .row, .row-no-gutter {
   max-width: 1140px;
   margin: 0 auto;
   width: 100%;
 }
 
-.preamble:after, .supporting:after
 .row:after, .row-no-gutter:after {
   clear: both;
   content: "";
   display: table;
 }
 
-.preamble h3, .preamble p:nth-child(1), .preamble p:nth-child(2), .preamble p:nth-child(3),
-.explanation, .participation,
 [class^="col-"] {
   float: left;
   margin-bottom: 14px;
@@ -428,8 +424,6 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-  .preamble h3, .preamble p:nth-child(1), .preamble p:nth-child(2), .preamble p:nth-child(3),
-  .explanation, .participation,
   .row [class^="col-"] {
     margin-left: 7px;
     margin-right: 7px;
@@ -458,7 +452,6 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-  .preamble p:nth-child(1), .preamble p:nth-child(2), .preamble p:nth-child(3),
   .row .col-4 {
     width: -webkit-calc(33.3333333% - 14px);
     width: calc(33.3333333% - 14px);
@@ -473,7 +466,6 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-  .explanation, .participation,
   .row .col-6 {
     width: -webkit-calc(50% - 14px);
     width: calc(50% - 14px);
@@ -516,7 +508,6 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-  .preamble h3,
   .row .col-12 {
     width: -webkit-calc(100% - 14px);
     width: calc(100% - 14px);
@@ -1019,6 +1010,38 @@ Globals
 Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
+h1 {
+  font-family: 'Lily Script One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: 'Titillium Web', sans-serif, helvetica;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-family: 'Titillium Web', sans-serif, helvetica;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif, helvetica;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 10px;
+  font-size: 0.625rem;
+}
+
 /* 
 Layout Rules
     CSS, by its very nature, is used to lay elements out on the page. However, there is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer. I refer to the minor components as Modules and will dive into those in the next section. The major components are referred to as Layout styles.

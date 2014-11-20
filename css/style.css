@@ -1011,7 +1011,23 @@ Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
 body {
-  background: url("background.jpg");
+  background: url("background.jpg") no-repeat center left;
+}
+
+h1, h2, h3 {
+  font-family: 'Lily Script One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  font-size: 3.75rem;
+}
+
+p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 /* 
