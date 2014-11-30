@@ -10,7 +10,7 @@ $gutter: 14px;
 $padding: 6px;
 
 // Common to all grids
-.row, .row-no-gutter {
+.row, .row-no-gutter, .page-wrapper {
     max-width: $desktop;
     margin: 0 auto;
     width: 100%;
@@ -29,7 +29,8 @@ $padding: 6px;
 }
 
 // Columns with verticle gutters
-.row [class^="col-"],  {
+.row [class^="col-"], 
+header  {
     @media screen and (min-width: $tablet) {
         margin-left: $gutter/2;
         margin-right: $gutter/2;
@@ -54,7 +55,8 @@ $padding: 6px;
     }
 }
 
-.row .col-4 {
+.row .col-4,
+.requirements, .sidebar {
     @media screen and (min-width: $tablet) {
         width: calc(33.3333333% - #{$gutter});
     }
@@ -66,7 +68,8 @@ $padding: 6px;
     }
 }
 
-.row .col-6 { 
+.row .col-6,
+section, .explanation, .participation, .benefits { 
     @media screen and (min-width: $tablet) {
         width: calc(50% - #{$gutter});
     }

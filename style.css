@@ -405,7 +405,7 @@ th {
 /* 
 12 Column Mobile First Gird System
 */
-.row, .row-no-gutter {
+.row, .row-no-gutter, .page-wrapper {
   max-width: 1140px;
   margin: 0 auto;
   width: 100%;
@@ -424,7 +424,8 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-  .row [class^="col-"] {
+  .row [class^="col-"],
+  header {
     margin-left: 7px;
     margin-right: 7px;
   }
@@ -452,7 +453,8 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-  .row .col-4 {
+  .row .col-4,
+  .requirements, .sidebar {
     width: -webkit-calc(33.3333333% - 14px);
     width: calc(33.3333333% - 14px);
   }
@@ -466,7 +468,8 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-  .row .col-6 {
+  .row .col-6,
+  section, .explanation, .participation, .benefits {
     width: -webkit-calc(50% - 14px);
     width: calc(50% - 14px);
   }
@@ -671,338 +674,6 @@ th {
 }
 
 /* 
-Responsive Navigation
-*/
-nav[role=navigation] {
-  clear: both;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.js nav[role=navigation] {
-  max-height: 0;
-  overflow: hidden;
-}
-
-nav[role=navigation].active {
-  max-height: 15em;
-}
-
-nav[role=navigation] ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav[role=navigation] li {
-  margin: 0;
-  padding: 0;
-}
-
-nav[role=navigation] li a {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  a.menu-link {
-    display: none;
-  }
-
-  .js nav[role=navigation] {
-    max-height: none;
-  }
-
-  nav[role=navigation] ul {
-    border: 0;
-    margin: 0;
-  }
-
-  nav[role=navigation] li {
-    display: inline-block;
-  }
-
-  nav[role=navigation] li a {
-    border: 0;
-  }
-}
-.menu-wrap {
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
-}
-
-.menu-wrap {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 6px;
-}
-@media screen and (min-width: 768px) {
-  .menu-wrap {
-    padding: 0;
-  }
-}
-
-.menu-wrap-styles {
-  background-color: rgba(0, 0, 0, 0.85);
-  height: 100vh;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .menu-wrap-styles {
-    background-color: transparent;
-    height: auto;
-  }
-}
-
-.carousel {
-  position: relative;
-}
-
-.carousel-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.carousel-open:checked + .carousel-item {
-  position: static;
-  opacity: 100;
-}
-
-.carousel-item {
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s ease-out;
-  transition: opacity 0.6s ease-out;
-}
-
-.carousel-item img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-.carousel-control {
-  background: rgba(0, 0, 0, 0.28);
-  border-radius: 50%;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-  font-size: 40px;
-  height: 40px;
-  line-height: 35px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  cursor: pointer;
-  -ms-transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  text-align: center;
-  width: 40px;
-  z-index: 10;
-}
-
-.carousel-control.prev {
-  left: 1.5%;
-}
-
-.carousel-control.next {
-  right: 1.5%;
-}
-
-.carousel-control:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3,
-#carousel-4:checked ~ .control-4 {
-  display: block;
-}
-
-.carousel-indicators {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-}
-
-.carousel-indicators-background {
-  display: inline-block;
-  height: 20px;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0 2px;
-}
-
-.carousel-indicators li {
-  display: inline-block;
-  margin: -6px 5px 0 5px;
-  padding: 0;
-  line-height: 1;
-}
-
-.carousel-bullet {
-  color: #fff;
-  cursor: pointer;
-  font-size: 35px;
-  line-height: 1;
-}
-
-.carousel-bullet:hover {
-  color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
-  color: #428bca;
-}
-
-#title {
-  width: 100%;
-  position: absolute;
-  padding: 0px;
-  margin: 0px auto;
-  text-align: center;
-  font-size: 27px;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  z-index: 9999;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
-}
-
-/*
-* Pure CSS Components - http://www.felipefialho.com/css-components/
-* Author: Luiz Felipe Tartarotti Fialho
-* hi@felipefialho.com
-* http://www.felipefialho.com/
-*/
-.btn {
-  cursor: pointer;
-}
-
-.modal .btn-close {
-  color: #aaaaaa;
-  cursor: pointer;
-  text-decoration: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.modal .btn-close svg {
-  fill: #8a8a8a;
-  -webkit-transition: fill 300ms linear;
-  transition: fill 300ms linear;
-  margin: 4px;
-  height: 22px;
-  width: 22px;
-}
-
-.modal .btn-close svg:hover {
-  fill: #242424;
-  -webkit-transition: fill 300ms linear;
-  transition: fill 300ms linear;
-}
-
-.modal-wrap:before {
-  content: "";
-  display: none;
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 101;
-}
-
-.modal-overlay {
-  bottom: 0;
-  display: none;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 102;
-}
-
-.modal-open:checked ~ .modal-wrap:before,
-.modal-open:checked ~ .modal-wrap .modal-overlay {
-  display: block;
-}
-
-.modal-open:checked ~ .modal-wrap .modal-dialog {
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  top: 20%;
-}
-
-.modal-overlay {
-  bottom: 0;
-  display: none;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 102;
-}
-
-.modal-dialog {
-  background: #fefefe;
-  border: #555555 solid 1px;
-  border-radius: 5px;
-  position: fixed;
-  left: 50%;
-  top: -100%;
-  width: 80%;
-  max-width: 600px;
-  z-index: 103;
-  padding: 0 6px 6px 6px;
-}
-
-/*
-* Pure CSS Components - http://www.felipefialho.com/css-components/
-* Author: Luiz Felipe Tartarotti Fialho
-* hi@felipefialho.com
-* http://www.felipefialho.com/
-*/
-.collapse-open, .collapse-painel {
-  display: none;
-}
-
-.collapse-open:checked ~ .collapse-painel {
-  display: block;
-}
-
-.collapse-btn {
-  border-radius: 2px;
-  cursor: pointer;
-  display: block;
-  padding: 5px 10px;
-}
-
-.collapse-btn:hover {
-  background: #f1f1f1;
-}
-
-.collapse-inner {
-  padding: 10px;
-}
-
-/* 
 Globals
 	Sass variable, mixins, plugins, etc. that are used throughout the entore site.
 */
@@ -1016,14 +687,17 @@ h1 {
   font-weight: 400;
   font-size: 80px;
   font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 0;
 }
 
 h2 {
   font-family: 'Titillium Web', sans-serif, helvetica;
   font-style: normal;
   font-weight: 900;
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-top: 0;
 }
 
 h3 {
@@ -1042,11 +716,31 @@ p {
   font-size: 0.625rem;
 }
 
+header {
+  text-align: right;
+}
+
+.summary {
+  text-align: right;
+}
+
 /* 
 Layout Rules
     CSS, by its very nature, is used to lay elements out on the page. However, there is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer. I refer to the minor components as Modules and will dive into those in the next section. The major components are referred to as Layout styles.
     Layout styles can also be divided into major and minor styles based on reuse. Major layout styles such as header and footer are traditionally styled using ID selectors but take the time to think about the elements that are common across all components of the page and use class selectors where appropriate.
 */
+.requirements {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.sidebar {
+  position: absolute;
+  top: 500px;
+  right: 0;
+}
+
 /* 
 Module Rules
     A Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component. In doing so, the page will be more flexible. If done right, Modules can easily be moved to different parts of the layout without breaking.
