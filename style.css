@@ -860,13 +860,13 @@ Layout Rules
 .requirements {
   position: absolute;
   top: 25px;
-  right: 100;
+  right: 100px;
 }
 
 .sidebar {
   position: absolute;
   top: 375px;
-  right: 190;
+  right: 190px;
 }
 
 @media screen and (max-width: 1040px) {
