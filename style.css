@@ -423,7 +423,7 @@ th {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row [class^="col-"],
   header {
     margin-left: 7px;
@@ -431,28 +431,28 @@ th {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-1 {
     width: -webkit-calc(8.3333333% - 14px);
     width: calc(8.3333333% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-2 {
     width: -webkit-calc(16.6666666% - 14px);
     width: calc(16.6666666% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-3 {
     width: -webkit-calc(25% - 14px);
     width: calc(25% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-4,
   .requirements, .sidebar {
     width: -webkit-calc(33.3333333% - 14px);
@@ -460,64 +460,64 @@ th {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-5 {
     width: -webkit-calc(41.6666666% - 14px);
     width: calc(41.6666666% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-6,
-  section, .explanation, .participation, .benefits {
+  section, .explanation, .participation, .benefits, footer {
     width: -webkit-calc(50% - 14px);
     width: calc(50% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-7 {
     width: -webkit-calc(58.3333333% - 14px);
     width: calc(58.3333333% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-8 {
     width: -webkit-calc(66.6666666% - 14px);
     width: calc(66.6666666% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-9 {
     width: -webkit-calc(75% - 14px);
     width: calc(75% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-10 {
     width: -webkit-calc(83.3333333% - 14px);
     width: calc(83.3333333% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-11 {
     width: -webkit-calc(91.6666666% - 14px);
     width: calc(91.6666666% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row .col-12 {
     width: -webkit-calc(100% - 14px);
     width: calc(100% - 14px);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -527,73 +527,73 @@ th {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-1 {
     width: 8.3333333%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-2 {
     width: 16.6666666%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-3 {
     width: 25%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-4 {
     width: 33.3333333%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-5 {
     width: 41.6666666%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-6 {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-7 {
     width: 58.3333333%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-8 {
     width: 66.6666666%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-9 {
     width: 75%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-10 {
     width: 83.3333333%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-11 {
     width: 91.6666666%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1040px) {
   .row-no-gutter .col-12 {
     width: 100%;
   }
@@ -605,7 +605,7 @@ th {
   z-index: 100;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1040px) {
   .row .fixed-nav {
     position: absolute;
     top: 0;
@@ -681,6 +681,13 @@ Globals
 Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
+.page-wrapper {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
 h1 {
   font-family: 'Lily Script One';
   font-style: normal;
@@ -688,6 +695,7 @@ h1 {
   font-size: 80px;
   font-size: 5rem;
   line-height: 1;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -717,11 +725,131 @@ p {
 }
 
 header {
+  margin-top: 0;
   text-align: right;
+  border-top: 50px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: double;
+  -webkit-transform: rotate(355deg);
+  -ms-transform: rotate(355deg);
+  transform: rotate(355deg);
 }
 
 .summary {
   text-align: right;
+  -webkit-transform: rotate(355deg);
+  -ms-transform: rotate(355deg);
+  transform: rotate(355deg);
+}
+
+.preamble {
+  margin-top: 50;
+  text-align: right;
+  border-top: 20px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: dotted;
+  -webkit-transform: rotate(355deg);
+  -ms-transform: rotate(355deg);
+  transform: rotate(355deg);
+}
+
+.explanation {
+  margin-top: 50;
+  text-align: right;
+  border-top: 20px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: double;
+  -webkit-transform: rotate(355deg);
+  -ms-transform: rotate(355deg);
+  transform: rotate(355deg);
+}
+
+.participation {
+  margin-top: 20;
+  text-align: right;
+  border-top: 20px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: dotted;
+  -webkit-transform: rotate(355deg);
+  -ms-transform: rotate(355deg);
+  transform: rotate(355deg);
+}
+
+.benefits {
+  padding: 15px;
+  margin-top: 20;
+  text-align: right;
+  border-top: 20px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: double;
+  -webkit-transform: rotate(355deg);
+  -ms-transform: rotate(355deg);
+  transform: rotate(355deg);
+}
+
+.requirements {
+  margin-top: 0;
+  text-align: left;
+  border-top: 20px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: dotted;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.sidebar {
+  margin-top: 0;
+  text-align: left;
+  border-top: 20px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: double;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+@media screen and (max-width: 1040px) {
+  .requirements, .sidebar {
+    margin-top: 20px;
+    -webkit-transform: rotate(355deg);
+    -ms-transform: rotate(355deg);
+    transform: rotate(355deg);
+    text-align: right;
+  }
+}
+footer {
+  text-align: right;
+  -webkit-transform: rotate(355deg);
+  -ms-transform: rotate(355deg);
+  transform: rotate(355deg);
+}
+
+@media screen and (max-width: 1157px) {
+  .footer {
+    text-align: right;
+  }
+}
+abbr, a {
+  color: red;
+}
+
+a:hover {
+  color: white;
 }
 
 /* 
@@ -731,16 +859,28 @@ Layout Rules
 */
 .requirements {
   position: absolute;
-  top: 50px;
-  right: 0;
+  top: 25px;
+  right: 100;
 }
 
 .sidebar {
   position: absolute;
-  top: 500px;
-  right: 0;
+  top: 375px;
+  right: 190;
 }
 
+@media screen and (max-width: 1040px) {
+  .requirements, .sidebar {
+    position: static;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .requirements, .sidebar {
+    position: static;
+    width: 100%;
+  }
+}
 /* 
 Module Rules
     A Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component. In doing so, the page will be more flexible. If done right, Modules can easily be moved to different parts of the layout without breaking.

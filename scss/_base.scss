@@ -3,9 +3,15 @@ Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
 
+
 //body {
 //    background: url('background.jpg') no-repeat;
 //}
+
+.page-wrapper {
+    box-sizing: border-box;
+    padding: 20px;
+}
 
 //Start header 
 
@@ -13,6 +19,7 @@ h1 {
     @include headline-font;
     @include fontSize(80px);
     line-height: 1;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -36,11 +43,119 @@ p {
 
 }
 
-header {
+header, {
+    margin-top: 0;
     text-align: right;
+    border-top: 50px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+    border-style: double;
+    transform: rotate(355deg);
     
 }
 
+
 .summary {
     text-align: right;
+    transform: rotate(355deg);
+}
+
+.preamble {
+    margin-top: 50;
+    text-align: right;
+    border-top: 20px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+    border-style: dotted;
+    transform: rotate(355deg);
+}
+
+.explanation {
+    margin-top: 50;
+    text-align: right;
+    border-top: 20px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+    border-style: double;
+    transform: rotate(355deg);
+    
+}
+
+.participation {
+    margin-top: 20;
+    text-align: right;
+    border-top: 20px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+    border-style: dotted;
+    transform: rotate(355deg);
+
+}
+
+.benefits {
+    padding: 15px;
+    margin-top: 20;
+    text-align: right;
+    border-top: 20px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: double;
+    transform: rotate(355deg);
+}
+
+.requirements {
+    margin-top: 0;
+    text-align: left;
+    border-top: 20px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+    border-style: dotted;
+    transform: rotate(10deg);
+        
+}
+
+.sidebar {
+    margin-top: 0;
+    text-align: left;
+    border-top: 20px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+    border-style: double;
+    transform: rotate(10deg);
+}
+
+@media screen and (max-width: $tablet) {
+        .requirements, .sidebar  {
+        margin-top: 20px;
+        transform: rotate(355deg);
+        text-align: right;
+        }
+}
+
+footer {
+    text-align: right;
+    transform: rotate(355deg);
+    
+}
+
+@media screen and (max-width: 1157px) {
+        .footer  {
+        text-align: right;
+        }
+}
+
+abbr, a {
+    color: red;
+
+}
+
+a:hover {
+    color: white;
 }
